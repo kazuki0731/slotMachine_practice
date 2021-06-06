@@ -12,7 +12,7 @@ export default function SimpleContainer() {
           component="div"
           style={{ backgroundColor: "#fff", height: "400px" }}
         >
-          
+          おい
         </Typography>
       </Container>
     </React.Fragment>
