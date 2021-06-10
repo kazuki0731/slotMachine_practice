@@ -15,3 +15,9 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+const num1 = '1';
+
+const num2 = '2';
+
+console.log(Number(num1) + Number(num2));
