@@ -2,24 +2,27 @@ import React from "react";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Typography from "@material-ui/core/Typography";
 import Container from "@material-ui/core/Container";
-import { useStyles } from "../styles/Styles";
-import { Timer } from "./Timer";
-import { Buttons } from "./Buttons";
+import { Slot } from "./Slot";
+import { makeStyles } from "@material-ui/core";
 
-export default function SimpleContainer() {
+
+const useStyles = makeStyles({
+  container: {
+    backgroundColor: "#ecf0f1",
+    height: "45vh",
+  },
+})
+
+export const MainSlot = () => {
   const classes = useStyles();
   return (
-    <React.Fragment >
+    <React.Fragment>
       <CssBaseline />
       <Container maxWidth="sm">
-        <Typography
-          component="div"
-          className={classes.container}
-        >
-          <Timer />
-          <Buttons />
+        <Typography component="div" className={classes.container}>
+          <Slot />
         </Typography>
       </Container>
     </React.Fragment>
   );
-}
+};
