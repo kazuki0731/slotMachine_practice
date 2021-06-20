@@ -28,7 +28,7 @@ export const Slot = () => {
     <div>
       <Grid container justify="center" spacing={3}>
         {IMAGES.map((image, index) => (
-          <Grid key={`${index}_img`} item className={classes.slot}>
+          <Grid key={`${index}_slot`} item className={classes.slot}>
             <div>
               <img
                 className={classes.images}
@@ -37,7 +37,6 @@ export const Slot = () => {
               />
             </div>
             <Button
-              key={`${index}_button`}
               className={classes.stopButton}
               variant="contained"
               color="primary"

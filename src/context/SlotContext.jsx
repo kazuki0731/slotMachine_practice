@@ -20,7 +20,6 @@ const IMAGES = [
 ];
 
 let rest = IMAGES.length;
-
 export const SlotContext = createContext();
 
 export const SlotContextProvider = (props) => {
